@@ -1,0 +1,26 @@
+"use client";
+
+import React, { useState } from "react";
+import MenuCategoryTabs from "./MenuCategoryTabs";
+import MenuCategoryLayout from "./MenuCategoryLayout";
+import { MENU_DATA, MENU_CATEGORIES } from "./MenuData";
+
+export default function MenuCategoriesView() {
+  const [activeCategory, setActiveCategory] = useState(MENU_CATEGORIES[0]);
+
+  return (
+    <div className="w-full bg-white py-12 md:py-16">
+      <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center">
+        <MenuCategoryTabs 
+          activeCategory={activeCategory} 
+          onCategoryChange={setActiveCategory} 
+        />
+        
+        {/* Category Content with Fade Animation Logic could be here */}
+        <div className="w-full transition-opacity duration-500 min-h-[500px]">
+          <MenuCategoryLayout items={MENU_DATA[activeCategory] || []} />
+        </div>
+      </div>
+    </div>
+  );
+}
