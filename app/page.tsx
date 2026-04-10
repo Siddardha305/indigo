@@ -1,6 +1,6 @@
 import HeroBackground from "@/components/hero/HeroBackground";
 import HeroText from "@/components/hero/HeroText";
-import FeaturedMenu from "@/components/menu/FeaturedMenu";
+import HomeMenuPreview from "@/components/menu/HomeMenuPreview";
 import Hero2 from "@/components/hero2";
 import Hero3 from "@/components/hero3";
 import Hero4 from "@/components/hero4";
@@ -17,9 +17,9 @@ export default function Home() {
         <HeroText />
       </HeroBackground>
       
-      {/* Section 2 - The background is completely full-width white */}
+      {/* Section 2 - Most Loved Menu Preview */}
       <div className="w-full bg-white relative">
-        <FeaturedMenu />
+        <HomeMenuPreview />
       </div>
       
       {/* Hero 2 - The Essence of Indigo */}
