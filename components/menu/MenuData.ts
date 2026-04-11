@@ -11,18 +11,18 @@ export interface MenuItem {
 }
 
 export const MENU_CATEGORIES = [
-  "NIBBLES",
-  "SOUPS & SALAD",
+  "APPETIZERS",
+  "SOUPS & SALADS",
   "MAIN COURSE",
   "BREADS & RICE",
   "DESSERTS",
   "BEVERAGES",
-  "COFFEE",
-  "BREAKFAST"
+  "CURRIES",
+  "BREAK FAST"
 ];
 
 export const MENU_DATA: Record<string, MenuItem[]> = {
-  "NIBBLES": [
+  "APPETIZERS": [
     {
       id: "n1",
       name: "BANG BANG SHRIMP",
@@ -65,13 +65,31 @@ export const MENU_DATA: Record<string, MenuItem[]> = {
     {
       id: "n6",
       name: "DRY GOBI MANCHURIAN",
-      description: "Crispy cauliflower tossed with onion, ginger, and green chilies.",
+      description: "Crispy cauliflower tossed with garlic, ginger, chillies, and bold Indo-Chinese sauces.",
       price: "13.99",
-      category: "NIBBLES",
-      isVegetarian: true
+      category: "APPETIZERS",
+      isVegetarian: true,
+      isSpicy: true
+    },
+    {
+      id: "n7",
+      name: "MASALA FRIES",
+      description: "Golden crispy fries tossed with tangy chaat masala and our signature spice blend.",
+      price: "11.99",
+      category: "APPETIZERS",
+      isVegetarian: true,
+      isSpicy: true
+    },
+    {
+      id: "n8",
+      name: "CHILLI CHICKEN (Spicy)",
+      description: "Crispy chicken stir-fried with garlic, green chillies, and bold Indo-Chinese sauces.",
+      price: "13.99",
+      category: "APPETIZERS",
+      isSpicy: true
     }
   ],
-  "SOUPS & SALAD": [
+  "SOUPS & SALADS": [
     {
         id: "ss1",
         name: "LENTIL SOUP",
@@ -178,7 +196,8 @@ export const MENU_DATA: Record<string, MenuItem[]> = {
         image: "/menu/coffee.png"
     }
   ],
-  "BREAKFAST": [
+  "CURRIES": [],
+  "BREAK FAST": [
     {
         id: "bf1",
         name: "HALWA PURI",

@@ -48,23 +48,29 @@ export default function FeaturedMenu() {
       </div>
 
       {/* 3. The Interactive Menu Tab Section */}
-      <div className="w-full bg-gray-50/10 relative">
+      <div className="w-full bg-white relative pb-20 md:pb-32">
         <div className="w-full max-w-[1400px] mx-auto pt-16 md:pt-24 flex flex-col items-center">
-             <div className="flex flex-col items-center mb-8 relative w-full">
-                <h3 className="text-[#20064A] font-brolimo text-2xl md:text-4xl text-center mb-4">INDIGO&apos;S MENU</h3>
+             <div className="flex flex-col items-center mb-10 relative w-full px-4">
+                <h3 className="text-[#20064A] font-serif text-3xl md:text-5xl text-center mb-2 tracking-[0.1em] uppercase">INDIGO&apos;S MENU</h3>
                 
                 {/* Custom Divider */}
-                <div className="flex items-center w-full max-w-sm mb-6">
-                    <div className="flex-1 h-px bg-[#DFAB40]/50" />
-                    <div className="mx-4 text-[#DFAB40]">✦</div>
-                    <div className="flex-1 h-px bg-[#DFAB40]/50" />
+                <div className="flex items-center w-full max-w-[280px] mb-8">
+                    <div className="flex-1 h-[1.5px] bg-[#DFAB40]/60" />
                 </div>
                 
-                <p className="text-gray-400 text-xs md:text-sm font-bold tracking-wider uppercase text-center max-w-lg mb-4">Each experience is crafted with care, bringing together taste, mood, and moments to remember.</p>
+                <p className="text-[#20064A]/60 text-xs md:text-sm font-medium text-center max-w-xl mb-4 leading-relaxed font-sans">
+                  Each experience is crafted with care, bringing together taste, mood, and memorable moments.
+                </p>
                 
-                {/* Halal Stamp - Absolute Positioned */}
-                <div className="absolute right-4 md:right-32 top-0 w-16 h-16 md:w-24 md:h-24">
-                    <img src="/logo/halal.png" alt="Halal Certified" className="w-full h-full object-contain" />
+                {/* Halal Stamp - In Green Circle like design */}
+                <div className="absolute right-4 md:right-10 top-0 w-16 h-16 md:w-24 md:h-24 flex items-center justify-center">
+                    <div className="w-full h-full relative group cursor-pointer transition-transform hover:scale-110">
+                        <img src="/logo/halal.png" alt="Halal Certified" className="w-full h-full object-contain" />
+                        <svg className="absolute inset-0 w-full h-full text-[#00A651]" viewBox="0 0 100 100">
+                           <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" strokeWidth="2.5" />
+                           <path d="M50 2 A48 48 0 0 1 98 50" fill="none" stroke="currentColor" strokeWidth="2.5" />
+                        </svg>
+                    </div>
                 </div>
              </div>
              <MenuCategoriesView />
@@ -92,14 +98,33 @@ export default function FeaturedMenu() {
       </div>
 
       {/* 5. Signature Dining Section (The Dark Themed events) */}
-      <div id="events" className="w-full py-20 md:py-32 bg-[#20064A]">
-        <div className="w-full max-w-[1400px] mx-auto px-4 flex flex-col items-center">
-            <div className="text-center mb-16">
-                <h2 className="text-white text-3xl md:text-5xl font-el-messiri mb-6">Signature Dining Experiences</h2>
-                <p className="text-white/60 font-medium max-w-2xl px-4">Crafted with intention, each evening offers a distinct blend of taste, atmosphere and storytelling.</p>
+      <div id="events" className="w-full py-20 md:py-32 bg-[#20064A] relative overflow-hidden">
+        {/* Patterned Background Overlay */}
+        <div className="absolute inset-0 opacity-5 pointer-events-none">
+          <div className="grid grid-cols-6 md:grid-cols-12 gap-8 p-4">
+             {Array.from({ length: 48 }).map((_, i) => (
+                <img key={i} src="/logo/logoicon.png" alt="" className="w-8 h-8 opacity-20" />
+             ))}
+          </div>
+        </div>
+
+        <div className="w-full max-w-[1400px] mx-auto px-4 flex flex-col items-center relative z-10">
+            <div className="text-center mb-16 flex flex-col items-center">
+                <h2 className="text-white text-2xl md:text-5xl font-serif mb-4 tracking-wide">Signature Dining Experiences</h2>
+                
+                {/* Custom Gold Divider */}
+                <div className="flex items-center w-full max-w-[150px] mb-6">
+                    <div className="flex-1 h-px bg-[#DFAB40]/50" />
+                    <div className="mx-3 text-[#DFAB40] text-[10px]">✦</div>
+                    <div className="flex-1 h-px bg-[#DFAB40]/50" />
+                </div>
+
+                <p className="text-white/60 font-medium max-w-2xl px-4 text-xs md:text-sm">
+                  Crafted with intention, each evening offers a distinct blend of taste, atmosphere, and storytelling.
+                </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 w-full mb-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 w-full max-w-[1100px] mb-10">
                 {SIGNATURE_DATA.map((item) => (
                     <MenuSignatureCard key={item.id} {...item} />
                 ))}

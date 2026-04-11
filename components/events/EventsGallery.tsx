@@ -1,44 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
-import { EVENTS_DATA, EVENT_CATEGORIES, EventItem } from "./EventsData";
-
-const EventCard = ({ event }: { event: EventItem }) => (
-  <div className="bg-white rounded-[24px] overflow-hidden shadow-2xl transition-all duration-500 hover:-translate-y-2 group">
-    <div className="relative h-[200px] md:h-[260px] w-full border-b border-gray-100">
-      <Image 
-        src={event.image} 
-        alt={event.title} 
-        fill 
-        className="object-cover transition-transform duration-700 group-hover:scale-110" 
-      />
-      <div className="absolute top-5 left-5 bg-white text-[#20064A] p-2 md:p-3 rounded-xl flex flex-col items-center min-w-[60px] md:min-w-[70px] shadow-lg">
-        <span className="text-xl md:text-2xl font-bold leading-none">{event.date}</span>
-        <span className="text-xs md:text-sm font-medium uppercase tracking-tight">{event.month}</span>
-      </div>
-    </div>
-    
-    <div className="p-6 md:p-8 flex flex-col items-center text-center">
-      <h4 className="text-[#20064A] font-brolimo text-xl md:text-2xl mb-5 group-hover:text-[#DFAB40] transition-colors">{event.title}</h4>
-      
-      <div className="flex flex-col gap-2 mb-8 items-center">
-        <p className="text-[#20064A] font-bold text-sm md:text-base tracking-wide">{event.time}</p>
-        <p className="text-gray-500 font-medium italic text-sm">{event.description}</p>
-      </div>
-      
-      <div className="w-full flex justify-center gap-3 mb-8">
-        {event.highlights.map((h, i) => (
-          <span key={i} className="text-[10px] md:text-xs text-blue-800 font-bold uppercase tracking-widest">{h}</span>
-        ))}
-      </div>
-      
-      <button className="w-full py-4 rounded-xl bg-[#20064A] text-white font-bold text-xs uppercase tracking-widest transition-all hover:bg-[#2c0964] hover:shadow-xl active:scale-95">
-        Reserve Now
-      </button>
-    </div>
-  </div>
-);
+import { EVENTS_DATA, EVENT_CATEGORIES } from "./EventsData";
+import MenuSignatureCard from "../menu/MenuSignatureCard";
 
 export default function EventsGallery() {
   const [activeCategory, setActiveCategory] = useState("ALL");
@@ -48,30 +12,54 @@ export default function EventsGallery() {
     : EVENTS_DATA.filter(e => e.category === activeCategory);
 
   return (
-    <section className="w-full py-24 md:py-32 bg-[#1b1b1b] relative overflow-hidden">
-      {/* Subtle Leaf Pattern Background */}
-      <div className="absolute inset-0 opacity-5 pointer-events-none bg-[url('/logo/leaf-pattern.png')] bg-repeat bg-[length:120px_120px]" />
+    <section className="w-full py-24 md:py-32 bg-[#20064A] relative overflow-hidden">
+      {/* Background Decorative Wheat Pattern */}
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
+          <div className="grid grid-cols-6 md:grid-cols-12 gap-12 p-8">
+             {Array.from({ length: 96 }).map((_, i) => (
+                <img key={i} src="/logo/logoicon.png" alt="" className="w-10 h-10 opacity-20" />
+             ))}
+          </div>
+      </div>
+
+      {/* Decorative Flowers in the corners of this section */}
+      <div className="absolute left-0 bottom-0 w-64 md:w-96 h-auto opacity-10 -translate-x-1/2 translate-y-1/2 pointer-events-none">
+          <img src="/PNGS/full-flower.png" alt="" className="w-full h-auto object-contain" />
+      </div>
+      <div className="absolute right-0 bottom-0 w-64 md:w-96 h-auto opacity-10 translate-x-1/2 translate-y-1/2 pointer-events-none">
+          <img src="/PNGS/full-flower.png" alt="" className="w-full h-auto object-contain" />
+      </div>
       
-      <div className="relative z-10 max-w-[1400px] mx-auto px-4">
+      <div className="relative z-10 max-w-[1300px] mx-auto px-4 flex flex-col items-center">
         {/* Section Header */}
-        <div className="flex flex-col items-center text-center mb-16 px-4">
-            <h2 className="text-white text-3xl md:text-5xl font-el-messiri tracking-wide mb-8 leading-tight uppercase">EXPERIENCES, CURATED FOR YOU</h2>
-            <p className="text-[#DFAB40] font-medium text-sm md:text-lg max-w-2xl leading-relaxed italic">
+        <div className="flex flex-col items-center text-center mb-16 md:mb-20">
+            <h3 className="text-white text-xs md:text-sm font-bold uppercase tracking-[0.3em] mb-4 opacity-70">Experiences, Curated For You</h3>
+            
+            <h2 className="text-white text-3xl md:text-5xl font-serif tracking-wide mb-8 uppercase">EXPERIENCES, CURATED FOR YOU</h2>
+            
+            {/* Divider */}
+            <div className="flex items-center w-full max-w-[160px] mb-8">
+                <div className="flex-1 h-px bg-[#DFAB40]/40" />
+                <div className="mx-3 text-[#DFAB40] text-[8px]">✦</div>
+                <div className="flex-1 h-px bg-[#DFAB40]/40" />
+            </div>
+
+            <p className="text-[#DFAB40] font-medium text-sm md:text-lg max-w-2xl leading-relaxed italic opacity-80">
                 Crafted with intention, each evening offers a distinct blend of taste, atmosphere, and storytelling.
             </p>
         </div>
 
-        {/* Categories / Tabs */}
-        <div className="w-full max-w-[1240px] mx-auto mb-16 md:mb-24 px-4 overflow-x-auto no-scrollbar scroll-smooth">
-            <div className="flex bg-white/5 p-1 rounded-xl min-w-max md:w-fit md:mx-auto">
+        {/* Filter Tabs */}
+        <div className="w-full max-w-[1000px] mx-auto mb-16 md:mb-20 overflow-x-auto no-scrollbar">
+            <div className="flex bg-white/5 backdrop-blur-sm p-1 rounded-sm border border-white/10 min-w-max justify-center">
                 {EVENT_CATEGORIES.map((cat) => (
                     <button
                         key={cat}
                         onClick={() => setActiveCategory(cat)}
-                        className={`px-6 py-3 transition-all duration-300 text-[10px] md:text-xs font-bold tracking-[0.1em] uppercase rounded-lg ${
+                        className={`px-8 py-3.5 transition-all duration-300 text-[10px] md:text-xs font-bold tracking-[0.15em] uppercase whitespace-nowrap ${
                             activeCategory === cat 
                                 ? "bg-[#DFAB40] text-[#20064A]" 
-                                : "text-white/60 hover:text-white"
+                                : "text-white/60 hover:text-white hover:bg-white/5"
                         }`}
                     >
                         {cat}
@@ -80,12 +68,25 @@ export default function EventsGallery() {
             </div>
         </div>
 
-        {/* Events Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 w-full max-w-[1200px] mx-auto">
+        {/* Events Grid - 2 columns for a more "Experiences" feel as per screenshot */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 w-full max-w-[1100px] mx-auto">
             {filteredEvents.length > 0 ? (
-                filteredEvents.map(event => <EventCard key={event.id} event={event} />)
+                filteredEvents.map(event => (
+                  <MenuSignatureCard 
+                    key={event.id}
+                    date={`${event.date} ${event.month}`}
+                    event={event.title}
+                    time={event.time}
+                    description={event.description}
+                    buttonText="Reserve Now"
+                    image={event.image}
+                    highlights={event.highlights}
+                  />
+                ))
             ) : (
-                <div className="col-span-full py-20 text-center text-white/40 italic">Coming soon...</div>
+                <div className="col-span-full py-24 text-center text-white/30 italic font-medium tracking-widest uppercase">
+                  More curated experiences coming soon...
+                </div>
             )}
         </div>
       </div>

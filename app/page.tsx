@@ -8,7 +8,6 @@ import Hero5 from "@/components/hero5";
 import Hero6 from "@/components/hero6";
 import Hero7 from "@/components/hero7";
 import Hero8 from "@/components/hero8";
-import Footer from "@/components/footer/Footer";
 
 export default function Home() {
   return (
@@ -42,9 +41,6 @@ export default function Home() {
 
       {/* Hero 8 - Find Your Way */}
       <Hero8 />
-
-      {/* Site Footer */}
-      <Footer />
     </div>
   );
 }

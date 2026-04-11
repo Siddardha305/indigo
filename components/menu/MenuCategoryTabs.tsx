@@ -10,8 +10,8 @@ interface MenuCategoryTabsProps {
 export default function MenuCategoryTabs({ activeCategory, onCategoryChange }: MenuCategoryTabsProps) {
   return (
     <div className="w-full flex flex-col items-center mb-8 md:mb-12">
-      <div className="w-full max-w-[1240px] border-b border-gray-100 overflow-x-auto no-scrollbar">
-        <div className="flex justify-between md:justify-center md:gap-8 px-4">
+      <div className="w-full max-w-[1240px] border border-[#20064A] overflow-x-auto no-scrollbar bg-white">
+        <div className="flex justify-start lg:justify-center min-w-max md:min-w-0">
           {MENU_CATEGORIES.map((category) => (
             <MenuCategoryTab
               key={category}
