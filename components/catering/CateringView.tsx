@@ -12,7 +12,7 @@ export default function CateringView() {
       <section className="relative w-full py-24 bg-[#20064A] flex flex-col items-center overflow-hidden">
         {/* Background Blur Image or Pattern */}
         <div className="absolute inset-0 opacity-10 blur-sm pointer-events-none">
-           <img src="/PNGS/catering2.png" alt="" className="w-full h-full object-cover" />
+           <img src="/imges/catering/services offered/Frame 307.webp" alt="" className="w-full h-full object-cover" />
         </div>
 
         <div className="relative z-10 w-full max-w-[1400px] px-4 flex flex-col items-center">
@@ -31,9 +31,9 @@ export default function CateringView() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 w-full max-w-[1200px]">
             {[
-              { title: "LIVE FOOD STATIONS", image: "/PNGS/catering1.png" },
-              { title: "WEDDING CATERING", image: "/PNGS/catering2.png" },
-              { title: "OUTDOOR EVENTS", image: "/PNGS/catering3.png" }
+              { title: "LIVE FOOD STATIONS", image: "/imges/catering/services offered/Frame 584.webp" },
+              { title: "WEDDING CATERING", image: "/imges/catering/services offered/Frame 585.webp" },
+              { title: "OUTDOOR EVENTS", image: "/imges/catering/services offered/Frame 586.webp" }
             ].map((service, i) => (
               <div key={i} className="flex flex-col items-center">
                 <div className="relative w-full aspect-[4/5] rounded-t-full border-[3px] border-[#DFAB40]/40 overflow-hidden group">

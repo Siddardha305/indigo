@@ -12,7 +12,7 @@ export default function CareersView() {
       {/* 2. Opportunities Section */}
       <section className="relative w-full py-24 bg-[#20064A] flex flex-col items-center overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none grayscale brightness-50">
-           <img src="/PNGS/kitchen.png" alt="" className="w-full h-full object-cover" />
+           <img src="/imges/career/opportunities/Frame 307.webp" alt="" className="w-full h-full object-cover" />
         </div>
 
         <div className="relative z-10 w-full max-w-[1400px] px-4 flex flex-col items-center text-center">
@@ -78,7 +78,7 @@ export default function CareersView() {
           <div className="max-w-[1240px] w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
               {/* Image Side */}
               <div className="relative w-full aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl group">
-                  <img src="/PNGS/chef.png" alt="Chef Working" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
+                  <img src="/imges/career/start your journey/Rectangle 133.webp" alt="Chef Working" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#20064A]/60 to-transparent" />
                   <div className="absolute top-10 left-10 text-white text-left">
                       <h4 className="text-3xl font-bold uppercase tracking-widest leading-tight">YOUR<br/>CULINARY JOURNEY<br/>BEGINS</h4>

@@ -1,46 +1,36 @@
-import HeroBackground from "@/components/hero/HeroBackground";
-import HeroText from "@/components/hero/HeroText";
+import HeroMain from "@/components/home/HeroMain";
 import HomeMenuPreview from "@/components/menu/HomeMenuPreview";
-import Hero2 from "@/components/hero2";
-import Hero3 from "@/components/hero3";
-import Hero4 from "@/components/hero4";
-import Hero5 from "@/components/hero5";
-import Hero6 from "@/components/hero6";
-import Hero7 from "@/components/hero7";
-import Hero8 from "@/components/hero8";
+import BrandEssence from "@/components/home/BrandEssence";
+import OurStory from "@/components/home/OurStory";
+import InteriorGallery from "@/components/home/InteriorGallery";
+import TeamSection from "@/components/home/TeamSection";
+import Testimonials from "@/components/home/Testimonials";
+import CateringCTA from "@/components/home/CateringCTA";
+import LocationCTA from "@/components/home/LocationCTA";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      <HeroBackground>
-        <HeroText />
-      </HeroBackground>
+      <HeroMain />
       
       {/* Section 2 - Most Loved Menu Preview */}
       <div className="w-full bg-white relative">
         <HomeMenuPreview />
       </div>
       
-      {/* Hero 2 - The Essence of Indigo */}
-      <Hero2 />
+      <BrandEssence />
       
-      {/* Hero 3 - The INDIGO Story */}
-      <Hero3 />
+      <OurStory />
       
-      {/* Hero 4 - Inside INDIGO */}
-      <Hero4 />
+      <InteriorGallery />
       
-      {/* Hero 5 - The INDIGO Family */}
-      <Hero5 />
+      <TeamSection />
       
-      {/* Hero 6 - Stories from Our Tables */}
-      <Hero6 />
+      <Testimonials />
       
-      {/* Hero 7 - Catering by INDIGO */}
-      <Hero7 />
+      <CateringCTA />
 
-      {/* Hero 8 - Find Your Way */}
-      <Hero8 />
+      <LocationCTA />
     </div>
   );
 }
