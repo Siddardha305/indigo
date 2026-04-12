@@ -19,7 +19,7 @@ export default function EventsCurated() {
       </div>
 
       <div className="relative z-10 max-w-[1240px] mx-auto px-4 flex flex-col items-center text-center">
-        <h2 className="text-white text-3xl md:text-5xl font-serif mb-6 tracking-wide">
+        <h2 className="text-white text-3xl md:text-5xl font-el-messiri mb-6 tracking-wide">
             Curated Dining Experiences
         </h2>
         
@@ -30,7 +30,7 @@ export default function EventsCurated() {
             <div className="flex-1 h-px bg-[#DFAB40]/50" />
         </div>
 
-        <p className="text-[#DFAB40] font-serif text-lg md:text-2xl mb-12 max-w-2xl leading-relaxed italic opacity-90">
+        <p className="text-[#DFAB40] font-el-messiri text-lg md:text-2xl mb-12 max-w-2xl leading-relaxed italic opacity-90">
           "Every evening takes on a new form, where taste, mood, and moments create something special"
         </p>
 

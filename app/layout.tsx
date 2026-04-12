@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans, Geist_Mono, El_Messiri } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+import LunchSpecialPopup from "@/components/popup/LunchSpecialPopup";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
@@ -43,6 +44,7 @@ export default function RootLayout({
       >
         <Navbar />
         <main className="flex-grow">{children}</main>
+        <LunchSpecialPopup />
         <Footer />
       </body>
     </html>

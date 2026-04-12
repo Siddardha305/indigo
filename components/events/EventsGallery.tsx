@@ -35,7 +35,7 @@ export default function EventsGallery() {
         <div className="flex flex-col items-center text-center mb-16 md:mb-20">
             <h3 className="text-white text-xs md:text-sm font-bold uppercase tracking-[0.3em] mb-4 opacity-70">Experiences, Curated For You</h3>
             
-            <h2 className="text-white text-3xl md:text-5xl font-serif tracking-wide mb-8 uppercase">EXPERIENCES, CURATED FOR YOU</h2>
+            <h2 className="text-white text-3xl md:text-5xl font-el-messiri tracking-wide mb-8 uppercase">EXPERIENCES, CURATED FOR YOU</h2>
             
             {/* Divider */}
             <div className="flex items-center w-full max-w-[160px] mb-8">

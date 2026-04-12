@@ -1,3 +1,4 @@
+import PageHeader from "@/components/layout/PageHeader";
 import EventsCurated from "@/components/events/EventsCurated";
 import EventsGallery from "@/components/events/EventsGallery";
 import MenuOfferCard from "@/components/menu/MenuOfferCard";
@@ -5,41 +6,11 @@ import { OFFERS_DATA } from "@/components/menu/MenuData";
 
 export default function EventsPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
-      {/* 1. Page Header Section (Custom for Events) */}
-      <section className="w-full py-20 md:py-32 bg-white flex flex-col items-center relative overflow-hidden">
-        {/* Wheat Background Pattern */}
-        <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
-            <div className="grid grid-cols-4 md:grid-cols-10 gap-16 p-10">
-                {Array.from({ length: 40 }).map((_, i) => (
-                    <img key={i} src="/logo/logoicon.png" alt="" className="w-12 h-12" />
-                ))}
-            </div>
-        </div>
-
-        {/* Gold Flower Decorations in top corners of header */}
-        <div className="absolute left-0 top-0 w-64 md:w-96 h-auto opacity-40 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-            <img src="/PNGS/full-flower.png" alt="" className="w-full h-auto object-contain brightness-125" />
-        </div>
-        <div className="absolute right-0 top-0 w-64 md:w-96 h-auto opacity-40 translate-x-1/2 -translate-y-1/2 pointer-events-none">
-            <img src="/PNGS/full-flower.png" alt="" className="w-full h-auto object-contain brightness-125" />
-        </div>
-
-        <div className="relative z-10 text-center flex flex-col items-center px-4">
-             <h1 className="text-[#20064A] text-4xl md:text-7xl font-serif tracking-[0.1em] uppercase mb-6">EVENTS & SPECIALS</h1>
-             
-             {/* Gold Divider */}
-             <div className="flex items-center w-full max-w-[200px] mb-8">
-                <div className="flex-1 h-px bg-[#DFAB40]/60" />
-                <div className="mx-4 text-[#DFAB40] text-[10px]">✦</div>
-                <div className="flex-1 h-px bg-[#DFAB40]/60" />
-            </div>
-
-             <p className="text-[#20064A]/70 text-sm md:text-lg max-w-2xl leading-relaxed font-medium">
-                Planning a visit, hosting an event, or have something in mind, we're here to help make it all come together.
-             </p>
-        </div>
-      </section>
+    <div className="flex flex-col min-h-screen bg-white font-el-messiri">
+      <PageHeader 
+        title="EVENTS & SPECIALS"
+        subtitle="Planning a visit, hosting an event, or have something in mind, we're here to help make it all come together."
+      />
 
       {/* 2. Curated Dining Experiences (Hero Section) */}
       <EventsCurated />
@@ -47,7 +18,7 @@ export default function EventsPage() {
       {/* 3. Exclusive Offers Slider Section */}
       <section className="w-full py-24 md:py-32 bg-white flex flex-col items-center relative overflow-hidden">
         <div className="max-w-[1400px] w-full px-4 relative flex flex-col items-center z-10">
-            <h3 className="text-[#20064A] text-3xl md:text-4xl font-serif tracking-widest uppercase mb-6 text-center">EXCLUSIVE OFFERS</h3>
+            <h3 className="text-[#20064A] text-3xl md:text-4xl font-el-messiri tracking-widest uppercase mb-6 text-center">EXCLUSIVE OFFERS</h3>
             
             {/* Divider */}
             <div className="flex items-center w-64 md:w-80 mb-8">

@@ -1,14 +1,9 @@
-import PageHeader from "@/components/layout/PageHeader";
-import Hero7 from "@/components/hero7";
+import CateringView from "@/components/catering/CateringView";
 
 export default function CateringPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
-      <PageHeader 
-        title="Catering" 
-        subtitle="Bring the flavors of INDIGO to your special events with our premium catering services."
-      />
-      <Hero7 />
-    </div>
+    <main className="min-h-screen">
+      <CateringView />
+    </main>
   );
 }

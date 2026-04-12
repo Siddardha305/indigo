@@ -22,8 +22,8 @@ export default function NavLinks() {
             href={link.href}
             className={`font-medium text-[18px] leading-[22px] tracking-[0.02em] transition-all duration-300 outline-none focus-visible:ring-2 focus-visible:ring-[#20064A] rounded-sm py-1 align-middle ${
               pathname === link.href 
-                ? "text-[#DFAB40] border-b-2 border-[#DFAB40]" 
-                : "text-[#20064A] hover:text-[#DFAB40] border-b-2 border-transparent"
+                ? "text-[#DFAB40]" 
+                : "text-[#20064A] hover:text-[#DFAB40]"
             }`}
           >
             {link.label}

@@ -16,9 +16,8 @@ export default function MenuCategoriesView() {
           onCategoryChange={setActiveCategory} 
         />
         
-        {/* Category Content with Fade Animation Logic could be here */}
         <div className="w-full transition-opacity duration-500 min-h-[500px]">
-          <MenuCategoryLayout items={MENU_DATA[activeCategory] || []} />
+          <MenuCategoryLayout key={activeCategory} items={MENU_DATA[activeCategory] || []} />
         </div>
       </div>
     </div>

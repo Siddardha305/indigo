@@ -13,12 +13,13 @@ export default function Footer() {
           <div className="flex flex-col">
              {/* Large Logo */}
              <div className="mb-6">
-               <h2 className="font-serif text-6xl md:text-8xl tracking-tight leading-none select-none uppercase">
-                 INDIGO
-               </h2>
-               <p className="font-serif text-lg md:text-xl tracking-[0.2em] text-white opacity-90 uppercase mt-2">
-                 An Indo-Pak Restaurant
-               </p>
+               <Image 
+                 src="/logo/logotext.png" 
+                 alt="Indigo Logo" 
+                 width={400} 
+                 height={120} 
+                 className="h-auto w-48 md:w-64 object-contain"
+               />
              </div>
 
              <p className="text-white/60 text-sm md:text-base mb-12 max-w-sm font-medium">
