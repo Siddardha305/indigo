@@ -5,12 +5,12 @@ export default function Hero2Text() {
     <div className="flex flex-col flex-1 w-full text-white text-left max-w-2xl mt-12 lg:mt-0 xl:pl-16">
       
       {/* Title block */}
-      {/* Title block - single line focus */}
-      <div className="flex items-baseline gap-x-2 mb-2 whitespace-nowrap overflow-x-visible">
+      {/* Title block - Responsive alignment */}
+      <div className="flex flex-col md:flex-row md:items-baseline gap-x-2 gap-y-2 mb-4">
         <h3 className="font-brolimo text-4xl md:text-6xl tracking-wide uppercase leading-none text-white">
           INDIGO
         </h3>
-        <span className="font-el-messiri text-xl md:text-4xl leading-none text-white/80">
+        <span className="font-el-messiri text-lg sm:text-xl md:text-4xl leading-tight text-white/80">
           , नील का पौधा , نیل کا پودا
         </span>
       </div>

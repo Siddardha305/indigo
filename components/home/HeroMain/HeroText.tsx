@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const BigLogo = () => (
-  <div className="flex flex-col items-center mb-0 pt-16 md:pt-24 lg:pt-32">
+  <div className="flex flex-col items-center mb-0 pt-4 md:pt-24 lg:pt-32">
     <div className="relative w-[280px] h-[100px] sm:w-[340px] sm:h-[120px] md:w-[440px] md:h-[150px] lg:w-[480px] lg:h-[160px]">
       <Image
         src="/PNGS/LOGO.png"
@@ -28,7 +28,7 @@ const GoldDivider = () => (
 
 export default function HeroText() {
   return (
-    <div className="relative z-20 flex flex-col items-center text-center px-4 w-full max-w-5xl mt-12 md:mt-24 lg:mt-32">
+    <div className="relative z-20 flex flex-col items-center text-center px-4 w-full max-w-5xl mt-0 md:mt-24 lg:mt-32">
       <BigLogo />
       
       <h1 className="text-[#20064A] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-el-messiri mt-0 tracking-wide leading-tight">

@@ -9,7 +9,7 @@ export default function HomeMenuPreview() {
       <div className="max-w-[1400px] w-full px-4 flex flex-col items-center">
         {/* Header Section */}
         <div className="text-center mb-12 md:mb-16 flex flex-col items-center">
-          <h2 className="text-[#20064A] text-2xl md:text-5xl font-serif mb-6 tracking-wide">
+          <h2 className="text-[#20064A] text-3xl md:text-5xl font-serif mb-6 tracking-wide">
             Most Loved, Freshly Served
           </h2>
           
@@ -57,7 +57,7 @@ export default function HomeMenuPreview() {
                 There&apos;s more to discover in every flavor we serve.
             </p>
             
-            <div className="relative flex items-center">
+            <div className="relative flex flex-col md:flex-row items-center gap-8 md:gap-0">
                 <Link 
                     href="/menu" 
                     className="bg-[#20064A] text-white px-10 py-4 rounded-lg font-bold text-sm uppercase tracking-widest transition-all hover:bg-[#2c0964] hover:shadow-2xl active:scale-95 flex items-center gap-4"
@@ -67,7 +67,7 @@ export default function HomeMenuPreview() {
                 </Link>
                 
                 {/* Halal Stamp */}
-                <div className="hidden md:block absolute left-full ml-16 -bottom-4 w-24 h-24">
+                <div className="md:absolute md:left-full md:ml-16 md:-bottom-4 w-20 h-20 md:w-24 md:h-24">
                     <img src="/logo/halal.png" alt="Halal Certified" className="w-full h-full object-contain" />
                 </div>
             </div>

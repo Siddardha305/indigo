@@ -17,13 +17,13 @@ export default function HeroBackground({ children }: Readonly<{ children: React.
       />
 
       {/* Photoshop Shape Background */}
-      <div className="absolute inset-x-0 bottom-0 w-full h-[85%] md:h-[92%] z-0 flex flex-col justify-end pointer-events-none">
+      <div className="absolute inset-x-0 bottom-0 w-full h-[135%] sm:h-[90%] md:h-[92%] z-0 flex flex-col justify-end pointer-events-none">
         <div className="relative w-full h-full max-w-[1900px] mx-auto opacity-100">
           <Image
             src="/PNGS/Subtractshape.webp"
             alt="Hero Background Shape"
             fill
-            className="object-contain object-bottom transition-all duration-700 h-[100%] transform scale-[1.08] md:scale-[1.12] origin-bottom"
+            className="object-contain object-bottom transition-all duration-700 h-[100%] transform scale-[3.3] sm:scale-[1.25] md:scale-[1.12] origin-bottom"
             style={{ 
               filter: 'drop-shadow(0 -1.5px 0 #DFAB40) drop-shadow(1.5px 0 0 #DFAB40) drop-shadow(-1.5px 0 0 #DFAB40)'
             }}
@@ -33,7 +33,7 @@ export default function HeroBackground({ children }: Readonly<{ children: React.
       </div>
       
       {/* Content wrapper */}
-      <div className="relative z-10 w-full flex-grow flex flex-col justify-end max-w-[1450px] mx-auto px-4 sm:px-6 md:px-12 pb-14 md:pb-24">
+      <div className="relative z-10 w-full flex-grow flex flex-col justify-start md:justify-end max-w-[1450px] mx-auto px-4 sm:px-6 md:px-12 pt-56 pb-0 md:pb-24">
         <div className="w-full flex flex-col items-center">
           {children}
         </div>
