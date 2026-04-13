@@ -9,14 +9,6 @@ interface PageHeaderProps {
 export default function PageHeader({ topTitle, title, subtitle }: PageHeaderProps) {
   return (
     <section className="relative w-full pt-32 pb-20 bg-white flex flex-col items-center overflow-hidden">
-      {/* Mandala Flowers */}
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 w-24 md:w-44 lg:w-[300px] opacity-30 pointer-events-none">
-        <img src="/PNGS/full-flower.png" alt="" className="w-full h-auto" />
-      </div>
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-24 md:w-44 lg:w-[300px] opacity-30 pointer-events-none">
-        <img src="/PNGS/full-flower.png" alt="" className="w-full h-auto" />
-      </div>
-
       <div className="relative z-10 flex flex-col items-center text-center px-4">
         {topTitle && (
           <h2 className="text-[#20064A] text-xl md:text-2xl font-bold tracking-widest uppercase mb-4 font-el-messiri">

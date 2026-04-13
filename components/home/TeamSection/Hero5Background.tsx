@@ -3,7 +3,7 @@ import VioletPetals from "../../decorations/VioletPetals";
 
 export default function TeamSectionBackground({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <section className="relative w-full bg-[#FCFCFA] py-16 md:py-24 flex flex-col items-center overflow-hidden">
+    <section className="relative w-full bg-[#fafafa] py-20 md:py-32 flex flex-col items-center overflow-hidden">
       
       {/* Corner Decorations */}
       <VioletPetals position="top-right" className="top-[-4px] right-[-4px]" />

@@ -8,6 +8,7 @@ import MenuCTA from "./MenuCTA";
 import { OFFERS_DATA, SPECIALS_DATA, SIGNATURE_DATA } from "./MenuData";
 
 import { FlowerDecoration } from "./MenuDecorations";
+import VioletPetals from "../decorations/VioletPetals";
 
 import PageHeader from "../layout/PageHeader";
 
@@ -48,10 +49,18 @@ export default function FeaturedMenu() {
       </div>
 
       {/* 3. The Interactive Menu Tab Section */}
-      <div className="w-full bg-white relative pb-20 md:pb-32">
-        <div className="w-full max-w-[1400px] mx-auto pt-16 md:pt-24 flex flex-col items-center">
-             <div className="flex flex-col items-center mb-10 relative w-full px-4">
-                <h3 className="text-[#20064A] font-serif text-3xl md:text-5xl text-center mb-2 tracking-[0.1em] uppercase">INDIGO&apos;S MENU</h3>
+      <div className="w-full bg-white relative pb-10 md:pb-16 overflow-hidden">
+        {/* Side Decorations */}
+        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-48 md:w-80 h-auto opacity-30 pointer-events-none select-none -translate-x-1/2">
+            <img src="/PNGS/half-flower.png" alt="" className="w-full h-auto object-contain" />
+        </div>
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-48 md:w-80 h-auto opacity-30 pointer-events-none select-none translate-x-1/2">
+            <img src="/PNGS/half-flower.png" alt="" className="w-full h-auto object-contain scale-x-[-1]" />
+        </div>
+
+        <div className="w-full max-w-[1400px] mx-auto pt-10 md:pt-16 flex flex-col items-center">
+             <div className="flex flex-col items-center mb-6 relative w-full px-4">
+                <h3 className="text-[#20064A] font-el-messiri text-3xl md:text-5xl text-center mb-2 tracking-[0.1em] uppercase">INDIGO&apos;S MENU</h3>
                 
                 {/* Custom Divider */}
                 <div className="flex items-center w-full max-w-[280px] mb-8">

@@ -3,7 +3,18 @@ import BrandEssenceDecor from "./BrandEssenceDecor";
 
 export default function BrandEssenceBackground({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <section className="relative w-full bg-[#20064A] py-16 md:py-24 flex flex-col items-center overflow-hidden">
+    <section className="relative w-full bg-background py-16 md:py-24 flex flex-col items-center overflow-hidden">
+      
+      {/* Subtle Pattern Overlay */}
+      <div 
+        className="absolute inset-0 pointer-events-none opacity-[0.04] z-0" 
+        style={{ 
+          backgroundImage: `url("/logo/logoiconwhite.png")`, 
+          backgroundSize: '100px', 
+          backgroundRepeat: 'repeat'
+        }}
+        aria-hidden="true"
+      />
       
       {/* Corner Decorations */}
       <BrandEssenceDecor />

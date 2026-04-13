@@ -1,15 +1,24 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #20074A;
+  --foreground: #fafafa;
+  --brand-blue: #2C0074;
+  --brand-yellow: #cf9000;
+  --brand-maroon: #991B00;
+  --brand-white: #fafafa;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-yellow: var(--brand-yellow);
+  --color-brand-maroon: var(--brand-maroon);
+  --color-brand-white: var(--brand-white);
+  
   --font-sans: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-geist-mono);
+  --font-plus-jakarta: var(--font-plus-jakarta);
   --font-el-messiri: var(--font-el-messiri);
   --font-brolimo: "Brolimo", serif;
 }
@@ -17,13 +26,17 @@
 /* Removed dark mode preference to maintain consistent brand colors */
 
 html, body {
-  background-color: #ffffff !important;
-  color: #20064A !important;
+  background-color: var(--background) !important;
+  color: var(--brand-white) !important;
   font-family: var(--font-plus-jakarta), sans-serif;
   margin: 0;
   padding: 0;
   /* Disable mobile tap highlight */
   -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-el-messiri), serif !important;
 }
 
 /* Prevent blue/grey blink on interactive elements */

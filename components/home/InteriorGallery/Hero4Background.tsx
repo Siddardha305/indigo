@@ -3,7 +3,7 @@ import YellowPetals from "../../decorations/YellowPetals";
 
 export default function InteriorGalleryBackground({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <section className="relative w-full bg-[#20064A] py-20 md:py-32 flex flex-col items-center overflow-hidden">
+    <section className="relative w-full bg-background py-20 md:py-32 flex flex-col items-center overflow-hidden">
       
       {/* Corner Decorations */}
       <YellowPetals position="top-left" className="top-[-4px] left-[-4px]" />

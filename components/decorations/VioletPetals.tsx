@@ -23,6 +23,13 @@ export default function VioletPetals({ className = "", position, opacity = "opac
     "bottom-right": "object-right-bottom",
   };
 
+  const flips = {
+    "top-left": "",
+    "top-right": "scale-x-[-1]",
+    "bottom-left": "",
+    "bottom-right": "scale-x-[-1]",
+  };
+
   return (
     <div className={`absolute w-24 md:w-44 lg:w-[300px] pointer-events-none z-0 select-none ${opacity} ${rotation} ${className}`}>
       <Image 
@@ -30,7 +37,7 @@ export default function VioletPetals({ className = "", position, opacity = "opac
         alt="" 
         width={600} 
         height={600} 
-        className={`w-full h-auto ${objectPositions[position]}`}
+        className={`w-full h-auto ${objectPositions[position]} ${flips[position]}`}
       />
     </div>
   );

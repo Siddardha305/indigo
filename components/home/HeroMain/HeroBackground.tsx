@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function HeroBackground({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <section className="relative w-full min-h-[96vh] bg-[#20064A] flex flex-col items-center overflow-x-hidden pt-12">
+    <section className="relative w-full min-h-[96vh] bg-background flex flex-col items-center overflow-x-hidden pt-12">
       
       {/* Subtle Pattern Overlay */}
       <div 
@@ -25,7 +25,7 @@ export default function HeroBackground({ children }: Readonly<{ children: React.
             fill
             className="object-contain object-bottom transition-all duration-700 h-[100%] transform scale-[3.3] sm:scale-[1.25] md:scale-[1.12] origin-bottom"
             style={{ 
-              filter: 'drop-shadow(0 -1.5px 0 #DFAB40) drop-shadow(1.5px 0 0 #DFAB40) drop-shadow(-1.5px 0 0 #DFAB40)'
+              filter: 'drop-shadow(0 -1.5px 0 #cf9000) drop-shadow(1.5px 0 0 #cf9000) drop-shadow(-1.5px 0 0 #cf9000)'
             }}
             priority
           />
@@ -33,7 +33,7 @@ export default function HeroBackground({ children }: Readonly<{ children: React.
       </div>
       
       {/* Content wrapper */}
-      <div className="relative z-10 w-full flex-grow flex flex-col justify-start md:justify-end max-w-[1450px] mx-auto px-4 sm:px-6 md:px-12 pt-56 pb-0 md:pb-24">
+      <div className="relative z-10 w-full flex-grow flex flex-col justify-start max-w-[1450px] mx-auto px-4 sm:px-6 md:px-12 pt-16 md:pt-20 pb-0 md:pb-24">
         <div className="w-full flex flex-col items-center">
           {children}
         </div>

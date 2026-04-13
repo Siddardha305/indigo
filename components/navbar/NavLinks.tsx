@@ -20,10 +20,10 @@ export default function NavLinks() {
         <li key={link.href} className="flex items-center">
           <Link
             href={link.href}
-            className={`font-medium text-[18px] leading-[22px] tracking-[0.02em] transition-all duration-300 outline-none focus-visible:ring-2 focus-visible:ring-[#20064A] rounded-sm py-1 align-middle ${
+            className={`font-medium text-[18px] leading-[22px] tracking-[0.02em] transition-all duration-300 outline-none focus-visible:ring-2 focus-visible:ring-brand-blue rounded-sm py-1 align-middle ${
               pathname === link.href 
-                ? "text-[#DFAB40]" 
-                : "text-[#20064A] hover:text-[#DFAB40]"
+                ? "text-brand-yellow" 
+                : "text-brand-blue hover:text-brand-yellow"
             }`}
           >
             {link.label}

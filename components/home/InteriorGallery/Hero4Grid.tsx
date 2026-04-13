@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 const GridImage = ({ src, alt, className }: { src: string; alt: string; className: string }) => (
-  <div className={`relative overflow-hidden rounded-md border-[1.5px] border-[#DFAB40] shadow-lg ${className}`}>
+  <div className={`relative overflow-hidden rounded-md border-[1.5px] border-brand-yellow shadow-lg ${className}`}>
     <Image 
       src={src} 
       alt={alt} 
@@ -25,19 +25,19 @@ export default function Hero4Grid() {
         {/* ROW 1 */}
         {/* Counter - spans 3 cols out of 12 */}
         <GridImage 
-          src="/hero4/counter.png" 
+          src="/imges/home/inside indigo/Frame.webp" 
           alt="Restaurant Counter" 
           className="md:col-span-3 h-[200px] md:h-[220px] lg:h-[280px]" 
         />
         {/* Lamp - spans 2 cols out of 12 */}
         <GridImage 
-          src="/hero4/lamp.png" 
+          src="/imges/home/inside indigo/Frame-1.webp" 
           alt="Bamboo Lamp" 
           className="md:col-span-2 h-[200px] md:h-[220px] lg:h-[280px]" 
         />
         {/* Dining Table - spans 7 cols out of 12 */}
         <GridImage 
-          src="/hero4/table.png" 
+          src="/imges/home/inside indigo/Frame-2.webp" 
           alt="Dining Table setup" 
           className="md:col-span-7 h-[200px] md:h-[220px] lg:h-[280px]" 
         />
@@ -45,13 +45,13 @@ export default function Hero4Grid() {
         {/* ROW 2 */}
         {/* Blue Wall - spans 5 cols out of 12 */}
         <GridImage 
-          src="/hero4/wall.png" 
+          src="/imges/home/inside indigo/Frame-3.webp" 
           alt="Blue LED lights on textured wall" 
           className="md:col-span-5 h-[200px] md:h-[250px] lg:h-[320px]" 
         />
         {/* Hanging Bells - spans 7 cols out of 12 */}
         <GridImage 
-          src="/hero4/bells.png" 
+          src="/imges/home/inside indigo/Frame-4.webp" 
           alt="Hanging ethnic bells" 
           className="md:col-span-7 h-[200px] md:h-[250px] lg:h-[320px]" 
         />
@@ -59,19 +59,19 @@ export default function Hero4Grid() {
         {/* ROW 3 */}
         {/* Hanging Lamps - spans 4 cols out of 12 */}
         <GridImage 
-          src="/hero4/lamps.png" 
+          src="/imges/home/inside indigo/Frame-5.webp" 
           alt="Modern dome lamps" 
           className="md:col-span-4 h-[200px] md:h-[240px] lg:h-[300px]" 
         />
         {/* Gold Sink - spans 4 cols out of 12 */}
         <GridImage 
-          src="/hero4/sink.png" 
-          alt="Gold and black marble sink" 
+          src="/imges/home/inside indigo/Frame-6.webp" 
+          alt="Gold Sink" 
           className="md:col-span-4 h-[200px] md:h-[240px] lg:h-[300px]" 
         />
         {/* Wide Restaurant - spans 4 cols out of 12 */}
         <GridImage 
-          src="/hero4/wide.png" 
+          src="/imges/home/inside indigo/Frame 248.webp" 
           alt="Restaurant interior dining space" 
           className="md:col-span-4 h-[200px] md:h-[240px] lg:h-[300px]" 
         />

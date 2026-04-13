@@ -9,7 +9,7 @@ export default function MenuCategoriesView() {
   const [activeCategory, setActiveCategory] = useState(MENU_CATEGORIES[0]);
 
   return (
-    <div className="w-full bg-white py-12 md:py-16">
+    <div className="w-full bg-white py-6 md:py-8">
       <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center">
         <MenuCategoryTabs 
           activeCategory={activeCategory} 

@@ -23,13 +23,13 @@ export default function LunchSpecialPopup() {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md transition-opacity duration-500">
-      <div className="relative w-full max-w-[850px] aspect-[4/3] md:aspect-[16/9] bg-[#20064A] rounded-lg border-4 md:border-[6px] border-[#DFAB40] shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-500">
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md transition-opacity duration-500 font-sans">
+      <div className="relative w-full max-w-[850px] aspect-[4/3] md:aspect-[16/9] bg-background rounded-lg border-4 md:border-[6px] border-brand-yellow shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-500">
         
         {/* Close Button */}
         <button 
           onClick={() => setIsVisible(false)}
-          className="absolute top-3 right-3 z-50 w-10 h-10 bg-[#20064A] border-2 border-[#DFAB40] rounded-full flex items-center justify-center text-[#DFAB40] hover:scale-110 active:scale-90 transition-transform cursor-pointer shadow-lg"
+          className="absolute top-3 right-3 z-50 w-10 h-10 bg-background border-2 border-brand-yellow rounded-full flex items-center justify-center text-brand-yellow hover:scale-110 active:scale-90 transition-transform cursor-pointer shadow-lg"
         >
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><path d="M18 6L6 18M6 6l12 12"/></svg>
         </button>
@@ -37,11 +37,11 @@ export default function LunchSpecialPopup() {
         {/* Background Dish Image */}
         <div className="absolute inset-0 z-0">
            <img src="/PNGS/lunch-special.png" alt="Special Set Lunch" className="w-full h-full object-cover opacity-50" />
-           <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-[#20064A] via-[#20064A]/80 md:via-[#20064A]/60 to-transparent" />
+           <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-background via-background/80 md:via-background/60 to-transparent" />
         </div>
 
         {/* Content Area */}
-        <div className="relative z-10 h-full flex flex-col justify-between p-6 md:p-12 text-white">
+        <div className="relative z-10 h-full flex flex-col justify-between p-6 md:p-12 text-brand-white">
           <div className="flex flex-col">
              {/* Logo Section */}
              <div className="mb-6 md:mb-10">
@@ -56,8 +56,8 @@ export default function LunchSpecialPopup() {
 
              {/* Main Offer */}
              <div className="flex flex-col gap-1 md:gap-2">
-                <h3 className="font-el-messiri text-lg md:text-3xl tracking-widest uppercase text-white/90">SPECIAL SET</h3>
-                <h2 className="font-el-messiri text-4xl sm:text-5xl md:text-8xl tracking-widest uppercase text-[#DFAB40] font-bold leading-none">LUNCH</h2>
+                <h3 className="font-el-messiri text-lg md:text-3xl tracking-widest uppercase text-brand-white/90">SPECIAL SET</h3>
+                <h2 className="font-el-messiri text-4xl sm:text-5xl md:text-8xl tracking-widest uppercase text-brand-yellow font-bold leading-none">LUNCH</h2>
              </div>
 
              <p className="mt-6 md:mt-8 font-el-messiri text-sm md:text-xl font-medium max-w-sm md:max-w-md leading-relaxed">
@@ -66,13 +66,13 @@ export default function LunchSpecialPopup() {
           </div>
 
           {/* Contact Details */}
-          <div className="flex flex-col gap-2 mt-10 md:mt-0 border-l-2 border-[#DFAB40]/40 pl-4 py-1">
+          <div className="flex flex-col gap-2 mt-10 md:mt-0 border-l-2 border-brand-yellow/40 pl-4 py-1">
              <p className="font-el-messiri text-[10px] sm:text-xs md:text-sm font-bold tracking-wider leading-relaxed">
-                <span className="text-[#DFAB40] block md:inline md:mr-2">Address:</span> 
+                <span className="text-brand-yellow block md:inline md:mr-2">Address:</span> 
                 451 Mennonite Road, Suite 190 Rosenberg, TX 77469
              </p>
              <p className="font-el-messiri text-[10px] sm:text-xs md:text-sm font-bold tracking-wider">
-                <span className="text-[#DFAB40] block md:inline md:mr-2">Contact:</span> 
+                <span className="text-brand-yellow block md:inline md:mr-2">Contact:</span> 
                 (832)-451-6027
              </p>
           </div>

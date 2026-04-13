@@ -30,14 +30,14 @@ export const MENU_DATA: Record<string, MenuItem[]> = {
     { id: "bf5", name: "Goat Paya (Seasonal)", description: "Slow-cooked goat trotters in a rich, spicy broth.", price: "19.99", category: "BREAKFAST" }
   ],
   "APPETIZERS": [
-    { id: "ap1", name: "Dry Chilli Paneer", description: "Crispy cottage cheese tossed with bell peppers and fresh chilies in a flavorful Indo-Chinese sauce.", price: "14.99", category: "APPETIZERS", isVegetarian: true, image: "/imges/menu/indigo_s menu/chicken paneer.webp" },
+    { id: "ap1", name: "Dry Chilli Paneer", description: "Crispy cottage cheese tossed with bell peppers and fresh chilies in a flavorful Indo-Chinese sauce.", price: "14.99", category: "APPETIZERS", isVegetarian: true, image: "/imges/menu/indigo_s menu/chicken paneer.webp", isPopular: true },
     { id: "ap2", name: "Masala Papad", description: "Crispy papad topped with fresh tomatoes, onions, cucumber, cilantro, and chaat masala.", price: "3.99", category: "APPETIZERS", isVegetarian: true },
-    { id: "ap3", name: "Veg Samosa (2 pcs)", description: "Crispy pastry filled with spiced potatoes, served with mint and tamarind chutney.", price: "4.99", category: "APPETIZERS", isVegetarian: true, image: "/imges/menu/our specials/samosa.webp" },
+    { id: "ap3", name: "Veg Samosa (2 pcs)", description: "Crispy pastry filled with spiced potatoes, served with mint and tamarind chutney.", price: "4.99", category: "APPETIZERS", isVegetarian: true, image: "/imges/menu/our specials/samosa.webp", isPopular: true },
     { id: "ap4", name: "Keema Samosa (3 pcs)", description: "Crispy pastry filled with minced meat, served with mint and tamarind chutney.", price: "6.99", category: "APPETIZERS" },
     { id: "ap5", name: "Chicken Samosa (3 pcs)", description: "Crispy pastry filled with minced chicken, served with mint and tamarind chutney.", price: "6.99", category: "APPETIZERS" },
     { id: "ap6", name: "Bang Bang Shrimp", description: "Crispy fried shrimp tossed in house sauce.", price: "11.99", category: "APPETIZERS" },
     { id: "ap7", name: "Indigo Fish Fry", description: "Swai fried in a lightly spiced chickpea-flour batter until golden and tender.", price: "12.99", category: "APPETIZERS" },
-    { id: "ap8", name: "Chicken Lollipop", description: "Juicy chicken wings, deep-fried and marinated in spices, dipped in a flavorful sauce.", price: "15.99", category: "APPETIZERS", isSpicy: true, image: "/imges/menu/indigo_s menu/chicken lollipops7.webp" },
+    { id: "ap8", name: "Chicken Lollipop", description: "Juicy chicken wings, deep-fried and marinated in spices, dipped in a flavorful sauce.", price: "15.99", category: "APPETIZERS", isSpicy: true, image: "/imges/menu/indigo_s menu/chicken lollipops7.webp", isPopular: true },
     { id: "ap9", name: "Chicken Egg Rolls", description: "Minced chicken cooked with spices, wrapped in a soft roll, and lightly fried.", price: "6.99", category: "APPETIZERS" },
     { id: "ap10", name: "Dry Gobi Manchurian", description: "Cauliflower florets coated in corn starch and spices, tossed in a flavorful Indo-Chinese sauce.", price: "12.99", category: "APPETIZERS", isVegetarian: true },
     { id: "ap11", name: "Chicken 65", description: "Spicy, deep-fried chicken bites marinated with Indian spices.", price: "10.99", category: "APPETIZERS", isSpicy: true },
@@ -153,15 +153,10 @@ export const OFFERS_DATA = [
 ];
 
 export const SPECIALS_DATA = [
-  {
-    id: "s1",
-    name: "BUTTER CHICKEN",
-    description: "A symphony of butter and spice that turns every bite into a memory.",
-    image: "/imges/home/Most Loved Sec/butter chicken.webp"
-  },
-  { id: "s2", name: "GOAT KORMA", description: "Traditional bone-in goat cooked to perfection.", image: "/imges/home/Most Loved Sec/peshawari.webp" },
-  { id: "s3", name: "SAMOSA CHAAT", description: "A tangy, spicy, and sweet explosion of flavors.", image: "/imges/home/Most Loved Sec/samosa.webp" },
-  { id: "s4", name: "MANGO LASSI", description: "The sweetness of mango and yogurt in every sip.", image: "/imges/home/Most Loved Sec/mango lassi.webp" }
+  { id: "s1", name: "BUTTER CHICKEN", description: "A symphony of butter and spice that turns every bite into a memory.", image: "/imges/home/Most Loved Sec/butter chicken.webp", isPopular: true },
+  { id: "s2", name: "GOAT KORMA", description: "Traditional bone-in goat cooked to perfection.", image: "/imges/home/Most Loved Sec/peshawari.webp", isPopular: true },
+  { id: "s3", name: "SAMOSA CHAAT", description: "A tangy, spicy, and sweet explosion of flavors.", image: "/imges/home/Most Loved Sec/samosa.webp", isPopular: true },
+  { id: "s4", name: "MANGO LASSI", description: "The sweetness of mango and yogurt in every sip.", image: "/imges/home/Most Loved Sec/mango lassi.webp", isPopular: true }
 ];
 
 export const SIGNATURE_DATA = [
