@@ -1,4 +1,5 @@
 import PageHeader from "../layout/PageHeader";
+import VioletPetals from "../decorations/VioletPetals";
 
 export default function CareersView() {
   return (
@@ -140,14 +141,10 @@ export default function CareersView() {
           </div>
       </section>
 
-      {/* Footer Mandala */}
+      {/* Footer Corners */}
       <div className="w-full h-32 bg-white relative">
-          <div className="absolute left-0 bottom-0 w-64 md:w-96 opacity-10 -translate-x-1/2 translate-y-1/2">
-             <img src="/PNGS/full-flower.png" alt="" className="w-full h-auto" />
-          </div>
-          <div className="absolute right-0 bottom-0 w-64 md:w-96 opacity-10 translate-x-1/2 translate-y-1/2">
-             <img src="/PNGS/full-flower.png" alt="" className="w-full h-auto" />
-          </div>
+          <VioletPetals position="bottom-left" className="bottom-[-4px] left-[-4px]" opacity="opacity-10" />
+          <VioletPetals position="bottom-right" className="bottom-[-4px] right-[-4px]" opacity="opacity-10" />
       </div>
     </div>
   );

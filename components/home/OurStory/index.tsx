@@ -1,12 +1,12 @@
-import Hero3Background from "./Hero3Background";
+import OurStoryBackground from "./Hero3Background";
 import Hero3Header from "./Hero3Header";
 import Hero3Content from "./Hero3Content";
 
 export default function OurStory() {
   return (
-    <Hero3Background>
+    <OurStoryBackground>
       <Hero3Header />
       <Hero3Content />
-    </Hero3Background>
+    </OurStoryBackground>
   );
 }

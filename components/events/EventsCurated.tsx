@@ -14,7 +14,7 @@ export default function EventsCurated() {
       </div>
       
       {/* Side Decorative Flowers (Subtle Violet) */}
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 w-96 h-auto opacity-10 pointer-events-none">
+      <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 w-72 h-auto opacity-10 pointer-events-none">
           <img src="/PNGS/full-flower.png" alt="" className="w-full h-auto object-contain" />
       </div>
 

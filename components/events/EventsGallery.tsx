@@ -23,10 +23,10 @@ export default function EventsGallery() {
       </div>
 
       {/* Decorative Flowers in the corners of this section */}
-      <div className="absolute left-0 bottom-0 w-64 md:w-96 h-auto opacity-10 -translate-x-1/2 translate-y-1/2 pointer-events-none">
+      <div className="absolute left-0 bottom-0 w-56 md:w-72 h-auto opacity-10 -translate-x-1/2 translate-y-1/2 pointer-events-none">
           <img src="/PNGS/full-flower.png" alt="" className="w-full h-auto object-contain" />
       </div>
-      <div className="absolute right-0 bottom-0 w-64 md:w-96 h-auto opacity-10 translate-x-1/2 translate-y-1/2 pointer-events-none">
+      <div className="absolute right-0 bottom-0 w-56 md:w-72 h-auto opacity-10 translate-x-1/2 translate-y-1/2 pointer-events-none">
           <img src="/PNGS/full-flower.png" alt="" className="w-full h-auto object-contain" />
       </div>
       

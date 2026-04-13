@@ -1,10 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import WhitePetals from "../decorations/WhitePetals";
 
 export default function Footer() {
   return (
     <footer className="relative w-full bg-[#20064A] text-white pt-24 pb-8 overflow-hidden font-sans border-t border-white/5">
+      {/* Corner Decorations */}
+      <WhitePetals position="bottom-left" className="bottom-[-4px] left-[-4px]" opacity="opacity-20" />
+      <WhitePetals position="bottom-right" className="bottom-[-4px] right-[-4px]" opacity="opacity-20" />
+
       {/* Main Container */}
       <div className="relative z-10 max-w-[1300px] mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32 pb-20">
@@ -97,18 +102,8 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Area with Corner Flowers */}
+        {/* Bottom Area */}
         <div className="relative pt-10 flex flex-col items-center">
-            {/* Left Flower - Precisely in corner */}
-            <div className="absolute left-0 bottom-0 w-64 md:w-96 h-auto opacity-20 -translate-x-1/2 translate-y-1/2 pointer-events-none z-0">
-                <img src="/PNGS/full-flower.png" alt="" className="w-full h-auto object-contain" />
-            </div>
-            
-            {/* Right Flower - Precisely in corner */}
-            <div className="absolute right-0 bottom-0 w-64 md:w-96 h-auto opacity-20 translate-x-1/2 translate-y-1/2 pointer-events-none z-0">
-                <img src="/PNGS/full-flower.png" alt="" className="w-full h-auto object-contain" />
-            </div>
-
             <div className="w-full text-center border-t border-white/5 pt-8 z-10">
                <p className="text-white/40 text-xs md:text-sm font-medium tracking-wide">
                  © 2026 Indigo Restaurant. All rights reserved
