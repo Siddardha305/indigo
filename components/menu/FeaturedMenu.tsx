@@ -11,7 +11,7 @@ import { OFFERS_DATA, SPECIALS_DATA, SIGNATURE_DATA } from "./MenuData";
 
 import { FlowerDecoration } from "./MenuDecorations";
 import VioletPetals from "../decorations/VioletPetals";
-
+import MenuHeader from "./MenuHeader";
 import PageHeader from "../layout/PageHeader";
 
 export default function FeaturedMenu() {
@@ -61,29 +61,7 @@ export default function FeaturedMenu() {
         </div>
 
         <div className="w-full max-w-[1400px] mx-auto pt-10 md:pt-16 flex flex-col items-center">
-             <div className="flex flex-col items-center mb-6 relative w-full px-4">
-                <h3 className="text-[#20064A] font-el-messiri text-3xl md:text-5xl text-center mb-2 tracking-[0.1em] uppercase">INDIGO&apos;S MENU</h3>
-                
-                {/* Custom Divider */}
-                <div className="flex items-center w-full max-w-[280px] mb-8">
-                    <div className="flex-1 h-[1.5px] bg-[#DFAB40]/60" />
-                </div>
-                
-                <p className="text-[#20064A]/60 text-xs md:text-sm font-medium text-center max-w-xl mb-4 leading-relaxed font-sans">
-                  Each experience is crafted with care, bringing together taste, mood, and memorable moments.
-                </p>
-                
-                {/* Halal Stamp - In Green Circle like design */}
-                <div className="absolute right-4 md:right-10 top-0 w-16 h-16 md:w-24 md:h-24 flex items-center justify-center">
-                    <div className="w-full h-full relative group cursor-pointer transition-transform hover:scale-110">
-                        <img src="/logo/halal.png" alt="Halal Certified" className="w-full h-full object-contain" />
-                        <svg className="absolute inset-0 w-full h-full text-[#00A651]" viewBox="0 0 100 100">
-                           <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" strokeWidth="2.5" />
-                           <path d="M50 2 A48 48 0 0 1 98 50" fill="none" stroke="currentColor" strokeWidth="2.5" />
-                        </svg>
-                    </div>
-                </div>
-             </div>
+             <MenuHeader />
              <MenuCategoriesView />
         </div>
       </div>

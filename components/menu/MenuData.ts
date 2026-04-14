@@ -8,6 +8,8 @@ export interface MenuItem {
   isVegetarian?: boolean;
   isSpicy?: boolean;
   isPopular?: boolean;
+  containsNuts?: boolean;
+  isGlutenFree?: boolean;
 }
 
 export const MENU_CATEGORIES = [

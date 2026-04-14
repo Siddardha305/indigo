@@ -13,14 +13,16 @@ export default function EventsGallery() {
 
   return (
     <section className="w-full py-24 md:py-32 bg-[#20064A] relative overflow-hidden">
-      {/* Background Decorative Wheat Pattern */}
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
-          <div className="grid grid-cols-6 md:grid-cols-12 gap-12 p-8">
-             {Array.from({ length: 96 }).map((_, i) => (
-                <img key={i} src="/logo/logoicon.png" alt="" className="w-10 h-10 opacity-20" />
-             ))}
-          </div>
-      </div>
+      {/* Repeating Logo Pattern Background */}
+      <div 
+          className="absolute inset-0 opacity-[0.04] pointer-events-none" 
+          style={{ 
+              backgroundImage: 'url("/logo/logoicon.png")',
+              backgroundSize: '100px',
+              backgroundRepeat: 'repeat',
+              backgroundPosition: 'center'
+          }}
+      />
 
       {/* Decorative Flowers in the corners of this section */}
       <div className="absolute left-0 bottom-0 w-56 md:w-72 h-auto opacity-10 -translate-x-1/2 translate-y-1/2 pointer-events-none">
