@@ -43,26 +43,4 @@ export const EVENTS_DATA: EventItem[] = [
     category: "CHAT",
     image: "/events/chaat-exp.png"
   },
-  {
-    id: "e3",
-    date: "04",
-    month: "Mar",
-    title: "MIDWEEK GRILL NIGHT",
-    time: "7:00 PM – 10:30 PM",
-    description: "Experience the sizzle of the grill",
-    highlights: ["Live BBQ", "Grill Specials", "Chef's Secret Sauce"],
-    category: "MIDWEEK SPECIALS",
-    image: "/events/grill-night.png"
-  },
-  {
-    id: "e4",
-    date: "04",
-    month: "Mar",
-    title: "MIDWEEK GRILL NIGHT",
-    time: "7:00 PM – 10:30 PM",
-    description: "Experience the sizzle of the grill",
-    highlights: ["Live BBQ", "Grill Specials", "Chef's Secret Sauce"],
-    category: "MIDWEEK SPECIALS",
-    image: "/events/grill-night-2.png"
-  }
 ];

@@ -83,15 +83,15 @@ export default function HeroBackground({ children }: Readonly<{ children: React.
                           </video>
                       </motion.div>
 
-                  {/* 3. Text Overlay - Inside the scaled shape container - Adjusted down slightly */}
-                  <div className="absolute inset-0 z-20 flex flex-col items-center justify-center pointer-events-none pt-12 md:pt-20">
-                      <motion.div 
-                        style={{ opacity: textOpacity }}
-                        className="relative w-full flex flex-col items-center pointer-events-auto"
-                      >
-                          {children}
-                      </motion.div>
-                  </div>
+                      {/* 3. Text Overlay - Inside the scaled shape container - Adjusted down slightly */}
+                      <div className="absolute inset-0 z-20 flex flex-col items-center justify-center pointer-events-none pt-12 md:pt-20">
+                          <motion.div 
+                            style={{ opacity: textOpacity }}
+                            className="relative w-full flex flex-col items-center pointer-events-auto"
+                          >
+                              {children}
+                          </motion.div>
+                      </div>
                   </div>
           </motion.div>
         </div>

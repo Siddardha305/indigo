@@ -30,20 +30,23 @@ export default function CateringView() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 w-full max-w-[1200px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 w-full max-w-[1300px]">
             {[
               { title: "LIVE FOOD STATIONS", image: "/imges/catering/services offered/Frame 584.webp" },
               { title: "WEDDING CATERING", image: "/imges/catering/services offered/Frame 585.webp" },
               { title: "OUTDOOR EVENTS", image: "/imges/catering/services offered/Frame 586.webp" }
             ].map((service, i) => (
               <div key={i} className="flex flex-col items-center">
-                <div className="relative w-full aspect-[4/5] rounded-t-full border-[3px] border-[#DFAB40]/40 overflow-hidden group">
-                  <img src={service.image} alt={service.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#20064A]/90 to-transparent" />
-                  <div className="absolute bottom-10 left-0 right-0 text-center">
-                    <h3 className="text-white font-el-messiri text-xl md:text-2xl tracking-widest px-4 uppercase">{service.title}</h3>
-                  </div>
+                <div className="relative w-full mb-8">
+                  <img 
+                    src={service.image} 
+                    alt={service.title} 
+                    className="w-full h-auto" 
+                  />
                 </div>
+                <h3 className="text-white font-el-messiri text-lg md:text-xl tracking-[0.2em] text-center uppercase">
+                  {service.title}
+                </h3>
               </div>
             ))}
           </div>

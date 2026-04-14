@@ -68,8 +68,8 @@ export default function EventsGallery() {
             </div>
         </div>
 
-        {/* Events Grid - 2 columns for a more "Experiences" feel as per screenshot */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 w-full max-w-[1100px] mx-auto">
+        {/* Events Grid - 3 columns for better spacing and layout */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 w-full max-w-[1300px] mx-auto">
             {filteredEvents.length > 0 ? (
                 filteredEvents.map(event => (
                   <MenuSignatureCard 
