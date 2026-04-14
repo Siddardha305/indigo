@@ -9,6 +9,14 @@ interface PageHeaderProps {
 export default function PageHeader({ topTitle, title, subtitle }: PageHeaderProps) {
   return (
     <section className="relative w-full pt-32 pb-20 bg-white flex flex-col items-center overflow-hidden">
+      {/* Side Decorations */}
+      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-32 md:w-64 h-auto opacity-30 pointer-events-none select-none -translate-x-1/2">
+          <img src="/PNGS/half-flower.png" alt="" className="w-full h-auto object-contain" />
+      </div>
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-32 md:w-64 h-auto opacity-30 pointer-events-none select-none translate-x-1/2">
+          <img src="/PNGS/half-flower.png" alt="" className="w-full h-auto object-contain scale-x-[-1]" />
+      </div>
+
       <div className="relative z-10 flex flex-col items-center text-center px-4">
         {topTitle && (
           <h2 className="text-[#20064A] text-xl md:text-2xl font-bold tracking-widest uppercase mb-4 font-el-messiri">

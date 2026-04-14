@@ -143,10 +143,10 @@ export default function ContactView() {
                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="rotate-45 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
                     </button>
                     
-                    <p className="mt-8 text-white/30 text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] flex items-center justify-center gap-3">
-                       <span className="w-8 h-px bg-white/10" />
+                    <p className="mt-8 text-[#DFAB40] text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] flex items-center justify-center gap-3">
+                       <span className="w-8 h-px bg-[#DFAB40]/30" />
                        Quick booking • instant confirmation
-                       <span className="w-8 h-px bg-white/10" />
+                       <span className="w-8 h-px bg-[#DFAB40]/30" />
                     </p>
                   </div>
                 )}
@@ -274,9 +274,9 @@ export default function ContactView() {
               <p className="text-[#DFAB40] text-sm md:text-base font-medium italic">We offer a vibrant atmosphere and a pleasant memory, more so to have you.</p>
           </div>
 
-          <div className="max-w-[1240px] w-full flex flex-col gap-8">
-              {/* Map Placeholder */}
-              <div className="w-full aspect-[21/9] bg-gray-100 rounded-xl overflow-hidden border border-[#20064A]/10 shadow-lg relative">
+          <div className="max-w-[1240px] w-full flex flex-col gap-6">
+              {/* Map Placeholder - Scaled Down */}
+              <div className="w-full aspect-[21/7] bg-gray-100 rounded-xl overflow-hidden border border-[#20064A]/10 shadow-lg relative">
                   <iframe 
                     title="Indigo Location"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.858066531362!2d-95.7950982!3d29.5694762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640fbadb08b53df%3A0x6d8f58be5b3c439b!2s451%20Mennonite%20Rd%20%23190%2C%20Rosenberg%2C%20TX%2077469!5e0!3m2!1sen!2sus!4v1712910000000!5m2!1sen!2sus"
@@ -361,10 +361,10 @@ export default function ContactView() {
       </section>
 
       {/* 5. Let's Connect (Form + Team Image) */}
-      <section className="w-full py-24 flex flex-col items-center bg-white px-4">
-          <div className="max-w-[1240px] w-full grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {/* Form Side */}
-              <div className="relative p-8 md:p-12 border-[1.5px] border-[#DFAB40]/40 rounded-3xl overflow-hidden bg-white">
+      <section className="w-full py-16 md:py-24 flex flex-col items-center bg-white px-4">
+          <div className="max-w-[1240px] w-full grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+              {/* Form Side - Scaled Down */}
+              <div className="relative p-6 md:p-10 border-[1.5px] border-[#DFAB40]/40 rounded-3xl overflow-hidden bg-white">
                   <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
                       <div className="grid grid-cols-6 gap-x-8 gap-y-12 p-8">
                           {Array.from({ length: 48 }).map((_, i) => (
@@ -375,32 +375,32 @@ export default function ContactView() {
 
                   <div className="relative z-10 flex flex-col items-center">
                     <h3 className="text-[#20064A] text-2xl md:text-3xl font-serif mb-3">Let&apos;s Connect</h3>
-                    <div className="w-32 h-[1px] bg-[#DFAB40]/60 mb-8" />
-                    <p className="text-[#20064A]/60 text-xs md:text-sm font-bold tracking-wider mb-10 text-center uppercase">Share your details and we&apos;ll get back to you.</p>
+                    <div className="w-32 h-[1px] bg-[#DFAB40]/60 mb-6" />
+                    <p className="text-[#20064A]/60 text-xs font-bold tracking-wider mb-8 text-center uppercase">Share your details and we&apos;ll get back to you.</p>
 
-                    <form className="w-full flex flex-col gap-5">
+                    <form className="w-full flex flex-col gap-4">
                         <div className="flex flex-col gap-1.5">
-                            <label className="text-[#20064A] text-[10px] font-bold uppercase tracking-widest pl-1">Name</label>
+                            <label className="text-[#20064A] text-[9px] font-bold uppercase tracking-widest pl-1">Name</label>
                             <input type="text" placeholder="John Doe" className="w-full bg-[#fdf8ec] border border-[#DFAB40]/20 px-4 py-3 rounded-md text-[#20064A] text-sm focus:outline-none" />
                         </div>
                         <div className="flex flex-col gap-1.5">
-                            <label className="text-[#20064A] text-[10px] font-bold uppercase tracking-widest pl-1">Phone Number</label>
+                            <label className="text-[#20064A] text-[9px] font-bold uppercase tracking-widest pl-1">Phone Number</label>
                             <input type="text" placeholder="9887711223" className="w-full bg-[#fdf8ec] border border-[#DFAB40]/20 px-4 py-3 rounded-md text-[#20064A] text-sm focus:outline-none" />
                         </div>
                         <div className="flex flex-col gap-1.5">
-                            <label className="text-[#20064A] text-[10px] font-bold uppercase tracking-widest pl-1">Email Address</label>
+                            <label className="text-[#20064A] text-[9px] font-bold uppercase tracking-widest pl-1">Email Address</label>
                             <input type="email" placeholder="you@example.com" className="w-full bg-[#fdf8ec] border border-[#DFAB40]/20 px-4 py-3 rounded-md text-[#20064A] text-sm focus:outline-none" />
                         </div>
                         <div className="flex flex-col gap-1.5">
-                            <label className="text-[#20064A] text-[10px] font-bold uppercase tracking-widest pl-1">Subject</label>
+                            <label className="text-[#20064A] text-[9px] font-bold uppercase tracking-widest pl-1">Subject</label>
                             <input type="text" placeholder="The..." className="w-full bg-[#fdf8ec] border border-[#DFAB40]/20 px-4 py-3 rounded-md text-[#20064A] text-sm focus:outline-none" />
                         </div>
                         <div className="flex flex-col gap-1.5">
-                            <label className="text-[#20064A] text-[10px] font-bold uppercase tracking-widest pl-1">Message</label>
-                            <textarea rows={4} placeholder="Type here..." className="w-full bg-[#fdf8ec] border border-[#DFAB40]/20 px-4 py-3 rounded-md text-[#20064A] text-sm focus:outline-none resize-none" />
+                            <label className="text-[#20064A] text-[9px] font-bold uppercase tracking-widest pl-1">Message</label>
+                            <textarea rows={3} placeholder="Type here..." className="w-full bg-[#fdf8ec] border border-[#DFAB40]/20 px-4 py-3 rounded-md text-[#20064A] text-sm focus:outline-none resize-none" />
                         </div>
 
-                        <button type="button" className="w-full bg-[#20064A] text-white py-4 mt-4 rounded-md font-bold text-sm uppercase tracking-widest flex items-center justify-center gap-3 hover:bg-[#300a6e]">
+                        <button type="button" className="w-full bg-[#20064A] text-white py-4 mt-2 rounded-md font-bold text-sm uppercase tracking-widest flex items-center justify-center gap-3 hover:bg-[#300a6e]">
                             Send Now
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="rotate-45"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
                         </button>
@@ -408,8 +408,8 @@ export default function ContactView() {
                   </div>
               </div>
 
-              {/* Team Image Side */}
-              <div className="relative w-full h-full min-h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+              {/* Team Image Side - Scaled Down */}
+              <div className="relative w-full aspect-square md:aspect-[4/3] lg:aspect-auto lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
                   <img src="/imges/contact us/lets connect/Rectangle 133.webp" alt="Indigo Team" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#20064A]/40 to-transparent" />
               </div>

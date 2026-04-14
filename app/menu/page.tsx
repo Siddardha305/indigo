@@ -3,7 +3,7 @@ import FeaturedMenu from "@/components/menu/FeaturedMenu";
 
 export default function MenuPage() {
   return (
-    <div className="pt-20 md:pt-28">
+    <div className="pt-0">
       <FeaturedMenu />
     </div>
   );

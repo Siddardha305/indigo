@@ -20,9 +20,9 @@ export default function CateringCTABackground({ children }: Readonly<{ children:
         <div className="absolute inset-0 bg-[#20064A] opacity-75" />
       </div>
       
-      {/* Corner Decorations */}
-      <WhitePetals position="top-right" className="top-[-4px] right-[-4px]" rotation="-rotate-90" opacity="opacity-40" />
-      <WhitePetals position="bottom-left" className="bottom-[-4px] left-[-4px]" opacity="opacity-40" />
+      {/* Corner Decorations - Refined size */}
+      <WhitePetals position="top-right" className="top-[-4px] right-[-4px] !w-[105px] md:!w-[215px] lg:!w-[380px]" rotation="-rotate-90" opacity="opacity-40" />
+      <WhitePetals position="bottom-left" className="bottom-[-4px] left-[-4px] !w-[105px] md:!w-[215px] lg:!w-[380px]" opacity="opacity-40" />
       
       {/* Main Content constraints */}
       <div className="relative z-10 w-full max-w-[1000px] mx-auto px-4 sm:px-6 flex flex-col items-center">

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface MenuSignatureCardProps {
   date: string;
@@ -51,22 +52,31 @@ export default function MenuSignatureCard({ date, event, time, description, butt
 
         {/* Menu Highlights Section */}
         <div className="w-full flex flex-col items-center mb-6">
-           <span className="text-[#20064A] text-[9px] font-bold uppercase tracking-widest mb-3">
-             Menu Highlights:
+           <span className="text-[#20064A] text-[10px] font-extrabold uppercase tracking-[0.2em] mb-4 flex items-center gap-2">
+             <span className="w-4 h-px bg-[#DFAB40]" />
+             Menu Highlights
+             <span className="w-4 h-px bg-[#DFAB40]" />
            </span>
-           <div className="flex flex-wrap justify-center gap-x-3 gap-y-1">
-              {highlights.map((h, i) => (
-                <span key={i} className="text-[#20064A] text-[11px] font-medium flex items-center gap-2">
-                  {h} {i < highlights.length - 1 && <span className="text-[#DFAB40] text-[6px]">✦</span>}
-                </span>
-              ))}
+           <div className="flex flex-wrap justify-center gap-2">
+              {highlights.length > 0 ? (
+                highlights.map((h, i) => (
+                  <span key={i} className="bg-[#20064A]/5 text-[#20064A] text-[11px] font-bold px-3 py-1 rounded-full border border-[#20064A]/10 shadow-sm">
+                    {h}
+                  </span>
+                ))
+              ) : (
+                <span className="text-[#20064A]/40 text-[10px] italic">Premium selection including Chef's specials</span>
+              )}
            </div>
         </div>
 
-        <button className="bg-[#1A0533] text-white px-8 py-2.5 rounded-sm text-[10px] font-bold uppercase tracking-[0.2em] flex items-center gap-3 transition-all hover:bg-[#20064A]">
+        <Link 
+          href="/contact#reservation"
+          className="bg-[#1A0533] text-white px-8 py-2.5 rounded-sm text-[10px] font-bold uppercase tracking-[0.2em] flex items-center gap-3 transition-all hover:bg-[#20064A]"
+        >
           Reserve Now
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
-        </button>
+        </Link>
       </div>
     </div>
   );
